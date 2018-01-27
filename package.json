@@ -1,0 +1,39 @@
+{
+    "name": "monitrc",
+    "displayName": "vscode-monit",
+    "description": "Syntax Highlighting for Monitrc files",
+    "version": "0.0.1",
+    "publisher": "drusellers",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drusellers/vscode-monit.git"
+    },
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "monitrc",
+                "aliases": [
+                    "monitrc",
+                    "monitrc"
+                ],
+                "extensions": [
+                    ".monit"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "monitrc",
+                "scopeName": "source.monitrc",
+                "path": "./syntaxes/Monit.tmLanguage"
+            }
+        ]
+    }
+}
